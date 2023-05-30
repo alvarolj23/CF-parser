@@ -1,0 +1,296 @@
+Competences File
+MARÍA DIZ Álvaro
+
+Mr MARÍA DIZ Álvaro
+Project Manager Data Analysis
+
+PROFILE
+
+Main Positions/Companies
+
+TOYOTA (AKKA consultant)/ R&D Engineer. Data Scientist in connected Powertrain team. Installation of
+multimedia components in cooperation with different departments. 2 year 7 months
+
+AKKA/ Digital consultant. Research in Industry 4.0 technologies. Provide support for the digital transformation
+at company level. 7 months
+
+GKN Driveline/ Digital Transformation Project Manager. Digitalization/Data Science /Robotics/ ETL/ IOT
+(Industry 4.0 department). Development of an autonomous manufacturing unit cell. 1 year
+
+CTAG/ Industrial engineer specializing in composite and bio-composite materials. 6 months
+
+DINAK/ Industrial management engineer. LEAN manufacturing. 4 months
+Key competences
+
+
+
+
+
+
+Data science
+Data visualization
+Machine Learning
+
+Python, Excel
+
+(3,5 yr) R, SAS
+
+Oracle, SQL
+
+(1,5 yr) Azure, AWS, GCP
+
+(4 mos)
+
+QlikView, Tableau, PowerBI
+
+(1,5yr) Streamlit
+
+(9 mos)
+
+Plotly
+
+(6 mos)
+
+Scikit-Learn
+
+(2 yr) TensorFlow (DL)
+
+NLP
+
+(1 yr)
+
+(1 yr)
+
+(1 yr)
+
+
+
+Big Data
+
+Hadoop
+
+(4 mos) PySpark
+
+(4 mos)
+
+
+
+Project management:
+
+Agile, SCRUM
+
+(2,5 yr) Microsoft Planner
+
+(9 mos)
+
+
+
+Industry 4.0:
+
+Computer vision
+
+(6 mos) Traceability
+
+(6 mos)
+
+
+
+Other tools:
+
+Automation and Robotics
+
+(1 yr) IOT
+
+(1 yr)
+
+MS Office 365
+
+(4 yr) ERP (Odoo)
+
+(1 yr)
+
+SharePoint and Teams
+MATLAB and Simulink
+
+(2,5 yr) JAVA and Android
+
+(6 mos)
+
+(1 yr)
+
+Languages
+
+
+
+
+
+
+Spanish
+Galician
+English
+French
+Dutch
+
+Mother tongue
+Mother tongue
+Advance
+Intermediate
+Beginner
+
+Youssra Elouaari
+youssra.elouaari@modisbelgium.be
+https://www.akkodis.com
+
+1
+
+
+
+Competences File
+MARÍA DIZ Álvaro
+
+EDUCATION - TRAININGS & CERTIFICATES
+Certified Associate in Project Management (CAPM)®
+Project Management Institute 2023
+
+MSc in Data Sciences at KSchool
+KSchool (Madrid) 2021
+
+
+
+
+
+Data hacking with Python and R. Machine Learning, Deep Learning, Natural Language Processing.
+Big Data with Spark on AWS & GCP.
+Relational databases (SQL) with PostgreSQL. Non-relational (NoSQL) with MongoDB.
+Visualization with Tableau.
+
+Learning path in Data Science and Data Analysis
+AKKA (Udemy) 2020
+
+
+
+
+
+
+Data processing with Python (pandas, numpy, matplotlib). IDEs: PyCharm and Jupyter Notebook.
+Statistical analysis and models with R and SAS. Exploratory Data Analysis using RStudio.
+Machine Learning with Python (Scikit-learn, TensorFlow, Keras, nltk) and R.
+Business Intelligence and Data Visualization. Power BI, QlikView and Tableau.
+Big Data infrastructure with Hadoop. Managing of big data on a cluster with HDFS and MapReduce. Analyze
+data with Pig and Spark.
+
+International Graduate Program of The AKKAdemy
+AKKA Technologies (Geneva) October 2019
+One-month intensive consulting program in Geneva
+ Consulting skills: problem analysis and statement, business models, agile methods, business case definition,
+emotional intelligence, and business culture. Disruptive innovation workshop, customer analysis
+ Innovation projects: actively teamwork in 2 innovation projects, learn design thinking methodology,
+innovative business model, focus on user lifecycle experience, cross cultural mindset and collaboration,
+presentation of innovation projects results
+
+MSc in Mechatronics and Industry 4.0
+University of Vigo (Spain) 2018/2019
+ Synergistic integration of mechanical engineering with electronics and intelligent computer control in the
+design and manufacture of industrial equipment and processes.
+ Specialization in Automation, Robotics, Data analysis and Industry 4.0.
+
+MSc in Industrial Engineering
+University of Vigo (Spain) 2016/2018
+ Advanced engineering studies with competences in mechanics, automation, electronics, electricity,
+programming and project management.
+ ERASMUS in Luleå University of Technology (Sweden).
+
+BSc in Industrial Technologies Engineering
+University of Vigo (Spain) 2012/2016
+ Multidisciplinary studies in Industrial Technologies.
+ Bachelor’s thesis in Project Management using Odoo and Android devices.
+Youssra Elouaari
+youssra.elouaari@modisbelgium.be
+https://www.akkodis.com
+
+2
+
+
+
+Competences File
+MARÍA DIZ Álvaro
+
+PROFESSIONAL EXPERIENCE
+R&D Engineer |July 2020 – Present| 2 year 7 months | Brussels (BE)
+TOYOTA
+Installation of multimedia components in cooperation with different departments.
+Role/ Objectives
+ Development of a Machine Learning tool to analyse customer feedback from tweets.
+ Twitter data extraction, Sentiment Analysis, Named Entity Recognition and Topic Modelling.
+ Creation of internal insights platform for pull communications using Streamlit.
+ TWC Catalyst modelling gap correction using Machine Learning.
+ Infotainment system benchmarking of top European electric vehicle competitors.
+Key Achievements/ Deliverables
+ Human Level Performance was achieved for Sentiment Analysis.
+ Method for processing the data to leverage different word embeddings (Char, POS and Word embedding).
+ Demonstrated that integration between NLP and VoC provides valuable insights for businesses.
+ Catalyst model accuracy improved in a 60% by using Machine Learning.
+
+Digital Consultant | Sept 2019 – Present| 3 years | Brussels (BE)
+AKKODIS
+Data Scientist and Business Analyst, developing solutions for client’s pain points.
+Project description/ Main tasks
+ Digital Transformation in Life Sciences. Pharma 4.0. Market analysis: SWOT, PESTLE.
+Main results
+ Solution for Predictive Maintenance in Air compressors based on Machine Learning.
+ AI Club: Creation of a chatbot with Machine Learning capabilities in Microsoft Azure.
+ Management of stakeholder engagement in the different projects.
+
+Digital Transformation Project Manager | Sept 2018 – Sept 2019| 1 year |
+Vigo (SPA)
+GKN DRIVELINE
+Development of a completely autonomous manufacturing unit cell
+Project description/ Main tasks
+ Industry 4.0 Project Manager: digitalization, automation, robotics, ETL, IOT.
+ Predictive Maintenance and Anomalies Detection with Python.
+Key Achievements/Deliverables
+ 20.000 € in cost savings per manufacturing line and year.
+ Leadership and coordination of a group of 4 contractors using Agile.
+
+Youssra Elouaari
+youssra.elouaari@modisbelgium.be
+https://www.akkodis.com
+
+3
+
+
+
+Competences File
+MARÍA DIZ Álvaro
+
+Composite Materials Engineer| Mar 2018 – Sep 2018| 6 mos | Porriño (SPA)
+CTAG (Automotive Technology Centre of Galicia)
+Analysis of the structural behaviour of a glass-fibre brake pedal
+Project description/ Main tasks
+ Finite Element Analysis (FEA) of Polymer Matrix Composites (GFRP, CFRP) with DIGIMAT.
+ Implicit FEM analysis with MSC Nastran (SOL 400) and ANSYS (ACP module for composite materials).
+ Explicit FEM analysis with ESI PAM-CRASH and RADIOSS.
+ CFD with ANSYS Fluent for EGR valves.
+ Pre-processing and post-processing using HyperWorks.
+ Analysis of bio-composites behaviour. PLA-Natural Fibres (flax, hemp, sisal).
+Main results
+ Testing of different laboratory specimens and automotive parts.
+ Validation of the analysis performed.
+
+LEAN Engineer Internship| Mar 2016-Jul 2016| 4 months | Vigo (SPA)
+DINAK
+LEAN manufacturing support
+Project description/ Main tasks
+ Using of LEAN manufacturing tools such as 5S and TPM.
+ Design of safety systems using CAD software such as SolidWorks, CATIA V5 and AutoCAD.
+ Obtaining Key Performance Indicators (KPI) and other indicator for preventing risks at the workplace.
+Main results
+Management of LEAN manufacturing tools in a 4.0 industry environment.
+
+Youssra Elouaari
+youssra.elouaari@modisbelgium.be
+https://www.akkodis.com
+
+4
+
+

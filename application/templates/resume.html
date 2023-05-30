@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #ddd;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #333;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #444;
+            color: #fff;
+        }
+
+        td {
+            background-color: #222;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resume</h1>
+
+    <h2>Basic Information</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for info in resume_data['basic_info'] %}
+            <tr>
+                <td>{{ info.field }}</td>
+                <td>{{ info.value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Work Experience</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Duration</th>
+                <th>Job Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for experience in resume_data['work_experience'] %}
+            <tr>
+                <td>{{ experience.job_title }}</td>
+                <td>{{ experience.company }}</td>
+                <td>{{ experience.location }}</td>
+                <td>{{ experience.duration }}</td>
+                <td>{{ experience.job_summary }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Skills</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Skill Name</th>
+                <th>Skill Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for skill in resume_data['skills'] %}
+            <tr>
+                <td>{{ skill.skill_name }}</td>
+                <td>{{ skill.skill_level }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

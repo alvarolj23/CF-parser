@@ -1,7 +1,7 @@
 import pdftotext
 
 # Load your PDF
-with open("uploads/CF_Alvaro_MARIA.pdf", "rb") as f:
+with open("CF_Alvaro_MARIA.pdf", "rb") as f:
     pdf = pdftotext.PDF(f)
 
 
@@ -17,4 +17,8 @@ print(pdf[0])
 print(pdf[1])
 
 # Read all the text into one string
-print("\n\n".join(pdf))
+#print("\n\n".join(pdf))
+
+file = open("CF_txt.txt", "w")
+file.write("\n\n".join(pdf))
+file.close()
