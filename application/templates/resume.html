@@ -120,7 +120,7 @@
                     <td>{{ work_exp.job_description }}</td>
                     <td>
                         <ul>
-                            {% for item in work_exp.achievements.split('\n') %}
+                            {% for item in work_exp.achievements %}
                                 <li>{{ item }}</li>
                             {% endfor %}
                         </ul>
@@ -135,9 +135,9 @@
     <table>
         <thead>
             <tr>
-                <th>Languages</th>
                 <th>Technical Skills</th>
                 <th>Soft Skills</th>
+                <th>Languages</th>
                 <th>Certificates</th>
             </tr>
         </thead>
@@ -145,28 +145,28 @@
             <tr>
                 <td>
                     <ul>
-                        {% for item in resume_data.skills.technical_skills.split('\n') %}
+                        {% for item in resume_data.skills.technical_skills %}
                             <li>{{ item }}</li>
                         {% endfor %}
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        {% for item in resume_data.skills.soft_skills.split('\n') %}
+                        {% for item in resume_data.skills.soft_skills %}
                             <li>{{ item }}</li>
                         {% endfor %}
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        {% for item in resume_data.skills.languages.split('\n') %}
+                        {% for item in resume_data.skills.languages %}
                             <li>{{ item }}</li>
                         {% endfor %}
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        {% for item in resume_data.skills.certificates.split('\n') %}
+                        {% for item in resume_data.skills.certificates %}
                             <li>{{ item }}</li>
                         {% endfor %}
                     </ul>
@@ -175,29 +175,5 @@
         </tbody>
     </table>
 
-    <!-- Display project experience -->
-    <h2>Project Experience</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>Technologies Used</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for project in resume_data.project_experience %}
-                <tr>
-                    <td>{{ project.project_name }}</td>
-                    <td>
-                        <ul>
-                            {% for item in project.technologies_used.split('\n') %}
-                                <li>{{ item }}</li>
-                            {% endfor %}
-                        </ul>
-                    </td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
 </body>
 </html>

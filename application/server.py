@@ -77,22 +77,12 @@ def decompose_work_experience(work_experience):
 
 def decompose_skills(skills):
     decomposed_skills = {
-        'languages': skills[0]['languages'],
-        'technical_skills': skills[0]['technical_skills'],
-        'soft_skills': skills[0]['soft_skills'],
-        'certificates': skills[0]['certificates']
+        'technical_skills': skills['technical_skills'],
+        'soft_skills': skills['soft_skills'],
+        'languages': skills['languages'],
+        'certificates': skills['certificates']
     }
     return decomposed_skills
-
-
-def decompose_project_experience(project_experience):
-    decomposed_projects = []
-    for project in project_experience:
-        decomposed_projects.append({
-            'project_name': project['project_name'],
-            'technologies_used': project['technologies_used']
-        })
-    return decomposed_projects
 
 
 @app.route('/resume/<name>')
@@ -105,7 +95,6 @@ def display_resume(name):
     resume_data['education'] = decompose_education(resume_data['education'])
     resume_data['work_experience'] = decompose_work_experience(resume_data['work_experience'])
     resume_data['skills'] = decompose_skills(resume_data['skills'])
-    resume_data['project_experience'] = decompose_project_experience(resume_data['project_experience'])
 
     return render_template('resume.html', resume_data=resume_data)
 
