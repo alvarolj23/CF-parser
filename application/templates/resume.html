@@ -51,6 +51,7 @@
 <body>
     <h1>Resume</h1>
 
+    <!-- Display basic information -->
     <h2>Basic Information</h2>
     <table>
         <thead>
@@ -60,15 +61,43 @@
             </tr>
         </thead>
         <tbody>
-            {% for info in resume_data['basic_info'] %}
-            <tr>
-                <td>{{ info.field }}</td>
-                <td>{{ info.value }}</td>
-            </tr>
+            {% for info in resume_data.basic_info %}
+                <tr>
+                    <td>{{ info.field }}</td>
+                    <td>{{ info.value }}</td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>
 
+    <!-- Display education -->
+    <h2>Education</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>University</th>
+                <th>Education Level</th>
+                <th>Degree</th>
+                <th>Field of Study</th>
+                <th>Graduation Year</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for edu in resume_data.education %}
+                <tr>
+                    <td>{{ edu.university }}</td>
+                    <td>{{ edu.education_level }}</td>
+                    <td>{{ edu.degree }}</td>
+                    <td>{{ edu.field_of_study }}</td>
+                    <td>{{ edu.graduation_year }}</td>
+                    <td>{{ edu.gpa }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Display work experience -->
     <h2>Work Experience</h2>
     <table>
         <thead>
@@ -76,37 +105,97 @@
                 <th>Job Title</th>
                 <th>Company</th>
                 <th>Location</th>
-                <th>Duration</th>
-                <th>Job Summary</th>
+                <th>Employment Duration</th>
+                <th>Job Description</th>
+                <th>Achievements</th>
             </tr>
         </thead>
         <tbody>
-            {% for experience in resume_data['work_experience'] %}
-            <tr>
-                <td>{{ experience.job_title }}</td>
-                <td>{{ experience.company }}</td>
-                <td>{{ experience.location }}</td>
-                <td>{{ experience.duration }}</td>
-                <td>{{ experience.job_summary }}</td>
-            </tr>
+            {% for work_exp in resume_data.work_experience %}
+                <tr>
+                    <td>{{ work_exp.job_title }}</td>
+                    <td>{{ work_exp.company }}</td>
+                    <td>{{ work_exp.location }}</td>
+                    <td>{{ work_exp.employment_duration }}</td>
+                    <td>{{ work_exp.job_description }}</td>
+                    <td>
+                        <ul>
+                            {% for item in work_exp.achievements.split('\n') %}
+                                <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>
 
+    <!-- Display skills -->
     <h2>Skills</h2>
     <table>
         <thead>
             <tr>
-                <th>Skill Name</th>
-                <th>Skill Level</th>
+                <th>Languages</th>
+                <th>Technical Skills</th>
+                <th>Soft Skills</th>
+                <th>Certificates</th>
             </tr>
         </thead>
         <tbody>
-            {% for skill in resume_data['skills'] %}
             <tr>
-                <td>{{ skill.skill_name }}</td>
-                <td>{{ skill.skill_level }}</td>
+                <td>
+                    <ul>
+                        {% for item in resume_data.skills.technical_skills.split('\n') %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        {% for item in resume_data.skills.soft_skills.split('\n') %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        {% for item in resume_data.skills.languages.split('\n') %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        {% for item in resume_data.skills.certificates.split('\n') %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
             </tr>
+        </tbody>
+    </table>
+
+    <!-- Display project experience -->
+    <h2>Project Experience</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Technologies Used</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for project in resume_data.project_experience %}
+                <tr>
+                    <td>{{ project.project_name }}</td>
+                    <td>
+                        <ul>
+                            {% for item in project.technologies_used.split('\n') %}
+                                <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>

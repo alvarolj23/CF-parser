@@ -8,24 +8,18 @@ import os
 class ResumeParser():
     def __init__(self, OPENAI_API_KEY):
         # set GPT-3 API key from the environment vairable
-        openai.api_key = os.getenv("OPENAI_API_KEY")
+        openai.api_key = OPENAI_API_KEY
         # GPT-3 completion questions
         self.prompt_questions = """
         Summarize the text below into a JSON with exactly the following structure:
-        {basic_info: {first_name, last_name, full_name, email, phone_number, location, portfolio_website_url, linkedin_url, github_main_page_url, university, education_level (BS, MS, or PhD), graduation_year, graduation_month, majors, GPA},
-        work_experience: [{job_title, company, location, duration, job_summary}],
-        project_experience:[{project_name, project_description}],
-        skills: [{skill_name, skill_level}]}
+        {basic_info: {full_name, job_position, email, phone_number, address, location, portfolio_website_url, linkedin_url, github_url},
+        education: [{university, education_level (BS, MS, or PhD), degree, field_of_study, graduation_year, gpa}],
+        work_experience: [{job_title, company, location, duration, job_description, achievements}],
+        skills: [{languages, technical_skills, soft_skills, certificates}],
+        project_experience:[{project_name, technologies_used}]}
         """
 
-#Achievements
-#Companies worked for
-#Graduation details College /Degree/ Duration
-#Name
-#Post Graduation details
-#Skills
-#Summary
-       # set up this parser's logger
+        # set up this parser's logger
         logging.basicConfig(filename='logs/parser.log', level=logging.DEBUG)
         self.logger = logging.getLogger()
 
@@ -72,13 +66,13 @@ class ResumeParser():
         if estimated_answer_tokens < max_tokens:
             self.logger.warning('estimated_answer_tokens lower than max_tokens, changing max_tokens to', estimated_answer_tokens)
         response = openai.Completion.create(
-        engine=engine,
-        prompt=prompt,
-        temperature=temperature,
-        max_tokens=min(4096-estimated_prompt_tokens, max_tokens),
-        top_p=top_p,
-        frequency_penalty=frequency_penalty,
-        presence_penalty=presence_penalty
+            engine=engine,
+            prompt=prompt,
+            temperature=temperature,
+            max_tokens=min(4096-estimated_prompt_tokens, max_tokens),
+            top_p=top_p,
+            frequency_penalty=frequency_penalty,
+            presence_penalty=presence_penalty
         )
         return response
     
@@ -90,9 +84,9 @@ class ResumeParser():
         """
         resume = {}
         pdf_str = self.pdf2string(pdf_path)
-        print(pdf_str)
+        #print(pdf_str)
         prompt = self.prompt_questions + '\n' + pdf_str
-        max_tokens = 1500
+        max_tokens = 2000
         engine = 'text-davinci-002'
         response = self.query_completion(prompt,engine=engine,max_tokens=max_tokens)
         response_text = response['choices'][0]['text'].strip()
